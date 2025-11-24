@@ -1,1 +1,31 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependency directories
 node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/project files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
