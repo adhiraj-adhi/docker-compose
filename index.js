@@ -30,7 +30,7 @@ app.get('/data', async (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-    res.send('Testing works')
+    res.send('Testing works...')
 })
 
 /** DATABASE CONNECTION */
