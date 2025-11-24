@@ -5,6 +5,10 @@ services:
     build: .
     ports:
       - "8000:8000"
+    volumes:
+      - .:/home/app          # <-- LIVE CODE SYNC
+      - /home/app/node_modules   # <-- avoid overwriting node_modules
+    command: npx nodemon --legacy-watch index.js  # <-- auto-reload server on changes
     environment:
       - MONGO_USERNAME=admin
       - MONGO_PASSWORD=supersecret
